@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\InstaFakeDetector.Common\InstaFakeDetector.Common.csproj" />
+    <ProjectReference Include="..\InstaFakeDetector.DataLayer\InstaFakeDetector.DataLayer.csproj" />
+    <ProjectReference Include="..\InstaFakeDetector.Entities\InstaFakeDetector.Entities.csproj" />
+    <ProjectReference Include="..\InstaFakeDetector.ViewModels\InstaFakeDetector.ViewModels.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="DNTCommon.Web.Core" />
+    <PackageReference Include="Microsoft.Extensions.Caching.SqlServer" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" />
+    <PackageReference Include="Microsoft.Extensions.Options" />
+  </ItemGroup>
+</Project>

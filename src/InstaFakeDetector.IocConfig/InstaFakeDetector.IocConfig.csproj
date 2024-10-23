@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\InstaFakeDetector.Common\InstaFakeDetector.Common.csproj" />
+    <ProjectReference Include="..\InstaFakeDetector.DataLayer\InstaFakeDetector.DataLayer.csproj" />
+    <ProjectReference Include="..\InstaFakeDetector.Entities\InstaFakeDetector.Entities.csproj" />
+    <ProjectReference Include="..\InstaFakeDetector.ViewModels\InstaFakeDetector.ViewModels.csproj" />
+    <ProjectReference Include="..\InstaFakeDetector.Services\InstaFakeDetector.Services.csproj" />
+
+    <ProjectReference Include="..\InstaFakeDetector.DataLayer.InMemoryDatabase\InstaFakeDetector.DataLayer.InMemoryDatabase.csproj" />
+    <ProjectReference Include="..\InstaFakeDetector.DataLayer.MSSQL\InstaFakeDetector.DataLayer.MSSQL.csproj" />
+    <ProjectReference Include="..\InstaFakeDetector.DataLayer.SQLite\InstaFakeDetector.DataLayer.SQLite.csproj" />
+
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" />
+    <PackageReference Include="Microsoft.Extensions.Caching.SqlServer" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" />
+    <PackageReference Include="Microsoft.Extensions.Options" />
+    <PackageReference Include="LigerShark.WebOptimizer.Core" />
+  </ItemGroup>
+</Project>
